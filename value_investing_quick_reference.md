@@ -38,7 +38,6 @@ Question: How much value does a firm generate for every $1 they invest in operat
 # Micro Analysis
 
 ## Valuation Formulas
-
 - Discounted Cash Flow
 - Graham Formula
 
@@ -63,3 +62,21 @@ Question: How much value does a firm generate for every $1 they invest in operat
 - Key Metric: Price to Funds From Ops
 - Why: This metric is useful for REITs because their assets generally appreciate rather than depreciate (real estate).
 - Macro Trigger: Bond Yields. REITs compete with Bonds for yield-seeking investors, so if Bond yields rise, the price of REITs will lower.
+
+---
+
+# Macro Variables:
+
+### Yield Curve: 
+The difference between short term and long term treasury yields. If fed rates are high, money is harder to borrow, meaning that cash flows are pulled downward.
+- Normal Curve: Long term yields are higher than short term yields. (Lenders are less attracted to long term T bills due to interest rate risk, inflation etc)
+- Inverted Curve: Short term rates are higher than long term rates (Lenders are attracted to long term T bills because they expect economic recession, future rate cuts, etc)
+
+### Sector Rotation:
+Different sectors do well at different parts of the business cycle. In order:
+| Cycle Phase | Best Sectors | Reason |
+| ----------- | ------------ | ------ |
+| Early Expansion | Financials/Industrials | Banks earn interest on new loans, industrials see orders for new equipment |
+| Mid Cycle | Tech/Comms | Growth is stable, companies invest in efficiency (so new tech) |
+| Late Cycle | Energy/Materials | Inflation peaks, so commodities hedge against inflation |
+| Recession | Utilities/Healthcare | Sectors with stable cashflows that cannot be cut regardless of economic situation |
