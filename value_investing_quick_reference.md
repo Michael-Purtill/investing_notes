@@ -80,3 +80,18 @@ Different sectors do well at different parts of the business cycle. In order:
 | Mid Cycle | Tech/Comms | Growth is stable, companies invest in efficiency (so new tech) |
 | Late Cycle | Energy/Materials | Inflation peaks, so commodities hedge against inflation |
 | Recession | Utilities/Healthcare | Sectors with stable cashflows that cannot be cut regardless of economic situation |
+
+### Equity Risk Premium:
+ERP = Earnings Yield - Risk Free Rate
+
+The extra return you demand for taking the extra risk of holding a stock over a bond.
+
+Earnings Yield = inverse of the P/E ration = 1/P/E
+
+- If ERP is high, stocks are undervalued and you should buy them.
+- If ERP is low, then they aren't undervalued and you migh as well own a bond.
+
+### Credit Spreads:
+The spread between Junk Bonds and Safe Bonds:
+- Narrow: Implies the market is being greedy, people think all debt is safe, the market is irrationally optimistic.
+- Widening Spreads: The market is fearful, people may be throwing out value stocks with the bath water.
