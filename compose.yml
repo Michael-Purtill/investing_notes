@@ -1,0 +1,11 @@
+services:
+  server:
+    image: financial_metrics
+    build:
+      context: .
+    volumes:
+      - ~/projects/investing_nodes:/code
+    ports:
+      - 5001:80
+    command: uvicorn server:app --host 0.0.0.0 --port 80 --reload
+    restart: unless-stopped
