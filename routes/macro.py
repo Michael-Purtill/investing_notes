@@ -27,12 +27,12 @@ def get_latest_fred_data(series_id: str, description: str = ""):
     """
     try:
         # Fetch last 1 year to ensure we find a valid data point (some series lag)
-        data = fred.get_series(series_id, limit=5)
+        data = fred.get_series(series_id, limit=5, sort_order='desc')
         if data.empty:
             raise ValueError("No data returned")
         
-        latest_date = data.index[-1]
-        latest_value = float(data.iloc[-1])
+        latest_date = data.index[0]
+        latest_value = float(data.iloc[0])
         
         return {
             'name': series_id,
@@ -89,13 +89,13 @@ def estimate_business_cycle():
     
     # 1. Fetch Key Inputs
     # T10Y2Y: 10-Year Minus 2-Year Treasury (The classic recession predictor)
-    yield_curve = get_latest_fred_data("T10Y2Y", "10-Year Minus 2-Year Treasury").latest_value
+    yield_curve = get_latest_fred_data("T10Y2Y", "10-Year Minus 2-Year Treasury")['latest_value']
     
     # BAMLH0A0HYM2: High Yield Spread
-    credit_spread = get_latest_fred_data("BAMLH0A0HYM2", "High Yield OAS").latest_value
+    credit_spread = get_latest_fred_data("BAMLH0A0HYM2", "High Yield OAS")['latest_value']
     
     # SAHMREALTIME: Sahm Rule Recession Indicator
-    sahm_rule = get_latest_fred_data("SAHMREALTIME", "Sahm Rule Recession Indicator").latest_value
+    sahm_rule = get_latest_fred_data("SAHMREALTIME", "Sahm Rule Recession Indicator")['latest_value']
 
     # 2. Logic Engine
     phase = "Unknown"
